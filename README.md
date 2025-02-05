@@ -10,7 +10,7 @@ Some of the stuff I did on this project include:
 And here is some examples of the webapp: 
 
 Homepage:
-![Alt text](shope_ex/donutfrontex.png)
+![Alt text](shop_ex/donutfrontex.png)
 
 Admin View to Change Current Menu:
 ![Alt text](shop_ex/donutadminex.png)
