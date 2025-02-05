@@ -7,6 +7,11 @@ Some of the stuff I did on this project include:
 *Designing the front page to show the products
 *Helping coordinate team roles
 
-And here is some examples of the webapp:  
+And here is some examples of the webapp: 
+
+Homepage:
+![Alt text](shope_ex/donutfrontex.jpeg)
+
+Admin View to Change Current Menu:
 ![Alt text](shop_ex/donutadminex.png)
 
