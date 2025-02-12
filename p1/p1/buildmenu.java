@@ -19,7 +19,7 @@ public class BuildMenu {
     try {
       Class.forName("com.mysql.cj.jdbc.Driver");
       mycon = DriverManager.getConnection("jdbc:mysql://localhost:3306/donutdb",
-                                          "root", "colej123");
+                                          "root", /*password here*/);
       sql_stmt = mycon.createStatement();
       records = sql_stmt.executeQuery("SELECT * FROM doughnut_menu");
       while (records.next()) {
