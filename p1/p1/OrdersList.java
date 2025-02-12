@@ -20,7 +20,7 @@ public class OrdersList {
 	    try {
 	        Class.forName("com.mysql.cj.jdbc.Driver");
 	        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/donutdb",
-	                                            "root", "colej123");
+	                                            "root", "/*password here */");
 	       Statement sql_stmt = conn.createStatement();
 	        ResultSet records = sql_stmt.executeQuery("SELECT * FROM doughnut_orders");
 	        while (records.next()) {
