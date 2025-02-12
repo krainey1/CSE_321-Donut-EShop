@@ -64,7 +64,7 @@ public class cserv extends HttpServlet {
     }
 
     try (Connection conn = DriverManager.getConnection(
-             "jdbc:mysql://localhost:3306/donutdb", "root", "colej123");) {
+             "jdbc:mysql://localhost:3306/donutdb", "root", /*password here*/);) {
       String sql =
           "INSERT INTO doughnut_orders (Name, CardNumber, Total, "
           + "Timestamp, Status, TransactionLog) VALUES (?, ?, ?, ?, ?, ?);";
