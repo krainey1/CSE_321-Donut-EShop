@@ -69,7 +69,7 @@ public class eserv extends HttpServlet {
 	  // get all the sent params
 	  int OrderID = Integer.parseInt(request.getParameter("OrderID"));
 	   try (Connection conn = DriverManager.getConnection(
-	             "jdbc:mysql://localhost:3306/donutdb", "root", "colej123");) {
+	             "jdbc:mysql://localhost:3306/donutdb", "root", /*password here*/);) {
 	      String sql = "UPDATE doughnut_orders SET Status='CLOSED' WHERE OrderID = ?";
 
 	      try (PreparedStatement stmt = conn.prepareStatement(sql)) {
