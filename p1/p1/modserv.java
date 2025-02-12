@@ -49,7 +49,7 @@ public class modserv extends HttpServlet {
     int id = Integer.parseInt(request.getParameter("donutID"));
     try {
       Connection conn = DriverManager.getConnection(
-          "jdbc:mysql://localhost:3306/donutdb", "root", "colej123");
+          "jdbc:mysql://localhost:3306/donutdb", "root", /*password here*/);
       if (action.equals("inc")) {
         String getMenuItem =
             "SELECT AvailableQuantity FROM doughnut_menu WHERE ProductKey = ?";
