@@ -45,7 +45,7 @@ Connection mycon=null;
 
         try {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        mycon = DriverManager.getConnection("jdbc:mysql://localhost:3306/donutdb","root","colej123"); //your password
+        mycon = DriverManager.getConnection("jdbc:mysql://localhost:3306/donutdb","root", /*password here*/ ); //your password
         if (admin_action.equals("new_donut")) {
         Integer donutID = Integer.parseInt(request.getParameter("donutID"));
         Float donutPrice = Float.parseFloat(request.getParameter("donutPrice"));
