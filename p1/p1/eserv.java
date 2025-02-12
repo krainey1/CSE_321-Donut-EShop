@@ -41,7 +41,7 @@ public class eserv extends HttpServlet {
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
         this.conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/donutdb",
-                                            "root", "colej123");
+                                            "root", /*password here*/);
     } catch(SQLException ex) {
     	ex.printStackTrace();
     }
